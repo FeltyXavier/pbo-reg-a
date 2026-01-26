@@ -2,7 +2,7 @@
 $host = "localhost";
 $user="root";
 $pass="";
-$db="db_kampus";
+$db="pbo-reg-a";
 
 $koneksi = mysqli_connect($host,$user,$pass,$db);
 if(!$koneksi){

@@ -16,10 +16,12 @@ function getMahasiswaById($id){
 /* simpan data mahasiswa */
 function tambahMahasiswa($nim, $nama, $prodi) {
     global $koneksi;
-    mysqli_query($koneksi, "INSERT INTO mahasiswa VALUES (
-        NULL,'$nim','$nama','$prodi'
-    )");
+    mysqli_query($koneksi, "
+        INSERT INTO mahasiswa (nim, nama, prodi)
+        VALUES ('$nim', '$nama', '$prodi')
+    ");
 }
+
 
 /* update data mahasiswa */
 function updateMahasiswa($id, $nim, $nama, $prodi) {
