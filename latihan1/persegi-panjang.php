@@ -4,8 +4,9 @@ class PersegiPanjang{
     public $lebar;
 
     public function hitungLuas(){
-        return $this->panjang; * $this->lebar;
+        return $this->panjang * $this->lebar;
     }
+
 
     public function hitungKeliling(){
         return 2 * ($this->panjang + $this->lebar);
